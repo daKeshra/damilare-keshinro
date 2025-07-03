@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { 
   Code, 
@@ -9,14 +9,22 @@ import {
   Book, 
   Mail 
 } from 'lucide-react';
-import jakob from "../public/jakob.jpg"
-import t1 from "../public/t1.png"
-import t2 from "../public/t2.png"
-import t3 from "../public/t3.png"
+import jakob from "/jakob.jpg"
+import t1 from "/t1.png"
+import t2 from "/t2.png"
+import t3 from "/t3.png"
 
 
 
-const LazyImage = ({ src, alt }) => {
+// const LazyImage = ({ src, alt }) => {
+
+interface LazyImageProps {
+  src: string;
+  alt: string;
+}
+
+const LazyImage = ({ src, alt }: LazyImageProps) => {
+
   const { ref, inView } = useInView({ triggerOnce: true });
 
   return (
@@ -26,7 +34,26 @@ const LazyImage = ({ src, alt }) => {
   );
 };
 
-const ProjectCard = ({ title, description, technologies, githubLink, liveLink, image }) => {
+// const ProjectCard = ({ title, description, technologies, githubLink, liveLink, image }) => {
+
+  interface ProjectCardProps {
+  title: string;
+  description: string;
+  technologies: string[];
+  githubLink: string;
+  liveLink?: string | null;
+  image?: string;
+}
+
+const ProjectCard = ({
+  title,
+  description,
+  technologies,
+  githubLink,
+  liveLink,
+  image
+}: ProjectCardProps) => {
+
   return (
     <div className="bg-gray-800 text-gray-200 rounded-lg shadow-md p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
       {/* {image && <img src={image} alt={title} loading='lazy' className="w-full h-40 object-cover rounded mb-4" />} */}
