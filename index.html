@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of a multi-disciplinary tech professional specializing in data science, backend development, program management, and research. Speaker at tech conferences.">
+    <meta name="keywords"
+        content="data science, backend development, program management, technical writer, tech speaker, portfolio">
+    <meta name="author" content="Damilare Keshinro">
+    <title>Portfolio | Data Scientist • Backend Developer • Program Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#home" class="navbar-logo">Portfolio</a>
+            <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="navbar-menu" id="navbar-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#speaking">Speaking</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero section" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="text-gradient">Damilare Keshinro</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Data Scientist • Backend Developer • Program Manager • Technical Writer • Tech Speaker
+                </p>
+                <span></span>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a multi-disciplinary tech professional with a passion for solving complex problems
+                        through data-driven insights, robust backend systems, and effective program management.
+                    </p>
+                    <p>
+                        With a strong foundation in research and a proven track record in data science and
+                        software development, I bring a unique perspective to every project. I've had the
+                        privilege of sharing my knowledge as a speaker at various tech conferences and events.
+                    </p>
+                    <p>
+                        My approach combines technical expertise with strategic thinking, enabling me to
+                        deliver solutions that are both innovative and practical. Whether it's building
+                        scalable backend systems, uncovering insights from data, or leading cross-functional
+                        teams, I'm committed to excellence.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="img/dk.png" alt="Professional profile" id="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>Skills & Expertise</h2>
+            </div>
+            <div class="skills-grid">
+                <!-- Data Science -->
+                <div class="skill-card" data-category="data-science">
+                    <div class="skill-icon">📊</div>
+                    <h3>Data Science</h3>
+                    <p>Extracting insights from complex datasets using advanced analytics and machine learning
+                        techniques.</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">R</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+
+                <!-- Backend Development -->
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon">⚙️</div>
+                    <h3>Backend Development</h3>
+                    <p>Building scalable, secure, and high-performance server-side applications and APIs.</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Flask</span>
+                    </div>
+                </div>
+
+                <!-- Program Management -->
+                <div class="skill-card" data-category="management">
+                    <div class="skill-icon">📋</div>
+                    <h3>Program Management</h3>
+                    <p>Leading cross-functional teams and delivering complex projects on time and within budget.</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Agile</span>
+                        <span class="skill-tag">Scrum</span>
+                        <span class="skill-tag">Stakeholder Management</span>
+                        <span class="skill-tag">Strategic Planning</span>
+                        <span class="skill-tag">Risk Management</span>
+                    </div>
+                </div>
+
+                <!-- Research -->
+                <div class="skill-card" data-category="research">
+                    <div class="skill-icon">🔬</div>
+                    <h3>Research</h3>
+                    <p>Conducting rigorous research and translating findings into actionable insights and innovations.
+                    </p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Experimental Design</span>
+                        <!-- <span class="skill-tag">Statistical Analysis</span> -->
+                        <span class="skill-tag">Academic Writing</span>
+                        <span class="skill-tag">Literature Review</span>
+                    </div>
+                </div>
+
+                <!-- Cloud & DevOps
+                <div class="skill-card" data-category="devops">
+                    <div class="skill-icon">☁️</div>
+                    <h3>Cloud & DevOps</h3>
+                    <p>Deploying and managing applications in cloud environments with CI/CD best practices.</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div> -->
+
+                <!-- Communication -->
+                <div class="skill-card" data-category="communication">
+                    <div class="skill-icon">🎤</div>
+                    <h3>Public Speaking</h3>
+                    <p>Delivering engaging presentations and workshops at conferences and corporate events.</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Technical Presentations</span>
+                        <span class="skill-tag">Workshop Facilitation</span>
+                        <span class="skill-tag">Storytelling</span>
+                        <span class="skill-tag">Audience Engagement</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Projects</h2>
+            </div>
+
+            <!-- Project Filters -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="data-science">Data Science & ML</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="research">Research</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: Data Science -->
+                <div class="project-card" data-category="data-science">
+                    <div class="project-image">
+                        <img src="assets/project-ds.jpg" alt="Data Science Project" id="project-img-1">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Data Science & ML</span>
+                        <h3>Predictive Analytics Platform</h3>
+                        <p>
+                            Developed a machine learning platform that predicts customer churn with 92% accuracy,
+                            helping businesses retain customers and optimize marketing strategies.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://detecting-vitamind-deficiency.streamlit.app/" class="project-link">View
+                                Details →</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Project 2: Backend -->
+                <div class="project-card" data-category="backend">
+                    <div class="project-image">
+                        <img src="img/smart-meter.png" alt="Backend Project" id="project-img-2">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Backend Development</span>
+                        <h3>Smart Meter Data Processing System</h3>
+                        <p>
+                            Developed a scalable API infrastructure for processing smart meter data, with 99.9% uptime
+                            and sub-100ms response times using microservices architecture.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://smart-meter-management.netlify.app/" class="project-link">View Details
+                                →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="backend">
+                    <div class="project-image">
+                        <img src="img/audiotech.png" alt="Backend Project" id="project-img-2">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Website Development</span>
+                        <h3>Audiotech</h3>
+                        <p>
+                            Built a high-performance RESTful API serving 10M+ requests daily, with 99.9% uptime
+                            and sub-100ms response times using microservices architecture.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://dakeshra.github.io/audiotech/" class="project-link">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="backend">
+                    <div class="project-image">
+                        <img src="img/finance-app.png" alt="Backend Project" id="project-img-2">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Backend Development</span>
+                        <h3>Finance App</h3>
+                        <p>
+                            Built a high-performance RESTful API serving 10M+ requests daily, with 99.9% uptime
+                            and sub-100ms response times using microservices architecture.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/daKeshra/finance-app" class="project-link">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Research -->
+                <div class="project-card" data-category="research">
+                    <div class="project-image">
+                        <img src="assets/project-research.jpg" alt="Research Project" id="project-img-3">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Articles</span>
+                        <h3>SQL articles</h3>
+                        <p>
+                            Wrote a series of articles on SQL optimization and best practices.
+                        </p>
+                        <div class="project-links">
+                            <a href="http://baeldung.com/author/keshradamora" class="project-link">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Full Stack -->
+                <div class="project-card" data-category="Data analysis">
+                    <div class="project-image">
+                        <img src="img/store-sales.png" alt="Data analysis Project" id="project-img-4">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Data analysis</span>
+                        <h3>Store Analysis</h3>
+                        <p>
+                            Analyzed sales data to identify trends and patterns, providing actionable insights for
+                            business decision-making.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/daKeshra/store-analysis/blob/main/stores.ipynb"
+                                class="project-link">View Details →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speaking Section -->
+    <section class="speaking section" id="speaking">
+        <div class="container">
+            <div class="section-title">
+                <h2>Speaking Engagements</h2>
+            </div>
+            <div class="speaking-grid">
+                <!-- Speaking 1 -->
+                <div class="speaking-card">
+                    <div class="speaking-image">
+                        <img src="img/django-girls-2023.jpg" alt="Conference presentation" id="speaking-img-1">
+                    </div>
+                    <div class="speaking-content">
+                        <span class="speaking-event">Django Girls 2023</span>
+                        <h3>Building and deploying a web application with Django</h3>
+                        <div class="speaking-meta">
+                            <span>📍 Eket, Akwa Ibom State</span>
+                            <span>👥 50+ Attendees</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Speaking 1.1 -->
+                <div class="speaking-card">
+                    <div class="speaking-image">
+                        <img src="img/django-girls-2024.jpg" alt="Conference presentation" id="speaking-img-1">
+                    </div>
+                    <div class="speaking-content">
+                        <span class="speaking-event">Django Girls Workshop 2024</span>
+                        <h3>Building and deploying your own web application with Django</h3>
+                        <div class="speaking-meta">
+                            <span>📍 Eket, Akwa Ibom State</span>
+                            <span>👥 100+ Attendees</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Speaking 1.2 -->
+                <div class="speaking-card">
+                    <div class="speaking-image">
+                        <img src="img/devfest-eket-2024.jpg" alt="Google Developer Festival" id="speaking-img-2">
+                    </div>
+                    <div class="speaking-content">
+                        <span class="speaking-event">Google Developer Festival 2024</span>
+                        <h3>From Data to AI: The oracle of the past, the answer to prophecy of the future.</h3>
+                        <div class="speaking-meta">
+                            <span>📍 Eket, Akwa Ibom State</span>
+                            <span>👥 300+ Attendees</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Speaking 3 -->
+                <div class="speaking-card">
+                    <div class="speaking-image">
+                        <img src="img/ExperienceAI.jpeg" alt="Panel discussion" id="speaking-img-3">
+                    </div>
+                    <div class="speaking-content">
+                        <span class="speaking-event">Women Tech Makers: Experience AI 2024</span>
+                        <h3>Expeience AI 2024:Building your own machine learning model for kids.</h3>
+                        <div class="speaking-meta">
+                            <span>📍 Eket, Akwa Ibom State</span>
+                            <span>👥 1000+ Attendees</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Speaking 3 -->
+                <div class="speaking-card">
+                    <div class="speaking-image">
+                        <img src="img/Pre-devfest-0005.JPG" alt="Panel discussion" id="speaking-img-3">
+                    </div>
+                    <div class="speaking-content">
+                        <span class="speaking-event">Pre-devfest Workshop 2025</span>
+                        <h3>Building your own AI content generator with Gemini API.</h3>
+                        <div class="speaking-meta">
+                            <span>📍 Eket, Akwa Ibom State</span>
+                            <span>👥 70+ Attendees</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Speaking 3 -->
+                <div class="speaking-card">
+                    <div class="speaking-image">
+                        <img src="img/nxtcro-2025.jpeg" alt="Panel discussion" id="speaking-img-3">
+                    </div>
+                    <div class="speaking-content">
+                        <span class="speaking-event">nxtCRO 2025</span>
+                        <h3>Clinical Trials in Underserved Populations: Barriers & Strategies for Inclusion</h3>
+                        <div class="speaking-meta">
+                            <span>📍 Unilag, Lagos State</span>
+                            <span>👥 100+ Attendees</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience section" id="experience">
+        <div class="container">
+            <div class="section-title">
+                <h2>Professional Experience</h2>
+            </div>
+            <div class="timeline">
+                <!-- Experience 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 - Present</span>
+                        <h3>Data Scientist</h3>
+                        <p class="timeline-company">nxtCR0</p>
+                        <p>
+                            Leading data science initiatives and managing cross-functional programs.
+                            Developing ML models and managing a cross-functional team.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025 - Present</span>
+                        <h3>Head of AI Translations</h3>
+                        <p class="timeline-company">Tonative</p>
+                        <p>
+                            Built scalable backend systems and performed data analysis to drive business decisions.
+                            Reduced API response time by 60% and implemented real-time analytics.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025</span>
+                        <h3>Backend Developer</h3>
+                        <p class="timeline-company">iSentry Technologies</p>
+                        <p>
+                            Built scalable backend systems and performed data analysis to drive business decisions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Experience 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023 - 2025</span>
+                        <h3>Data analytics facilitator</h3>
+                        <p class="timeline-company">Africinnovate</p>
+                        <p>
+                            Conducted data analysis and provided insights to inform business decisions.
+
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Experience 5 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 - 2025</span>
+                        <h3>Technical Writer For SQL</h3>
+                        <p class="timeline-company">Baeldung</p>
+                        <p>
+                            Wrote technical articles and tutorials on SQL.
+                            Enhanced data storytelling clarity for readers and professionals.
+                            Delivered optimized SQL queries with practical business applications.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022 - 2023</span>
+                        <h3>Researcher Assistant</h3>
+                        <p class="timeline-company">Livingston Research</p>
+                        <p>
+                            Conducted research in machine learning and data science.
+                            Integrated visual storytelling to enhance research impact.
+                            Solve clients' business problems using analytics and predictive machine learning
+                            methods.
+                            Trained models on business data to predict outcomes with up to 95%
+                            accuracy.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+
+                <div class="contact-socials">
+                    <a href="https://linkedin.com/in/damilare-keshinro" class="social-link" aria-label="LinkedIn"
+                        target="_blank">💼</a>
+                    <a href="https://github.com/daKeshra" class="social-link" aria-label="GitHub" target="_blank">💻</a>
+                    <!-- <a href="https://twitter.com" class="social-link" aria-label="Twitter" target="_blank">🐦</a> -->
+                    <a href="mailto:keshradamora@gmail.com" class="social-link" aria-label="Email">📧</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Damilare Keshinro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
