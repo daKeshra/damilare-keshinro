@@ -217,48 +217,26 @@ skillCards.forEach(card => {
 function initContactForm() {
     const form = document.getElementById('contact-form');
 
-    form.addEventListener('submit', async function (e) {
+    form.addEventListener('submit', function (e) {
         e.preventDefault();
 
         // Get form data
-        const formData = new FormData(form);
-        const data = Object.fromEntries(formData.entries());
+        const formData = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            message: document.getElementById('message').value
+        };
 
         // Validate form
-        if (!validateForm(data)) {
+        if (!validateForm(formData)) {
             return;
         }
 
-        const submitBtn = form.querySelector('button[type="submit"]');
-        const originalBtnText = submitBtn.textContent;
-        submitBtn.textContent = 'Sending...';
-        submitBtn.disabled = true;
+        // Show success message (in a real app, you'd send this to a server)
+        showFormMessage('success', 'Thank you for your message! I\'ll get back to you soon.');
 
-        try {
-            // REPLACE 'YOUR_FORMSPREE_ENDPOINT' WITH YOUR ACTUAL FORMSPREE URL
-            // Example: https://formspree.io/f/xyzaqvlw
-            const response = await fetch('https://formspree.io/f/xgoznnbl', {
-                method: 'POST',
-                headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(data)
-            });
-
-            if (response.ok) {
-                showFormMessage('success', 'Thank you! Your message has been sent successfully.');
-                form.reset();
-            } else {
-                const errorData = await response.json();
-                showFormMessage('error', errorData.error || 'Oops! There was a problem submitting your form.');
-            }
-        } catch (error) {
-            showFormMessage('error', 'Oops! There was a network problem. Please try again later.');
-        } finally {
-            submitBtn.textContent = originalBtnText;
-            submitBtn.disabled = false;
-        }
+        // Reset form
+        form.reset();
     });
 }
 
